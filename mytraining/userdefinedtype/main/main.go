@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"niel-biswas/gokit/mytraining/userdefinedtype/domain"
-	"niel-biswas/gokit/mytraining/userdefinedtype/mapstore"
+	"mytraining/userdefinedtype/domain"
+	"mytraining/userdefinedtype/mapstore"
 )
 
 // Organises the CRUD operations at UI layer

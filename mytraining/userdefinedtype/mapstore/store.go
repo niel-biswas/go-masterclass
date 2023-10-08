@@ -2,7 +2,7 @@ package mapstore
 
 import (
 	"errors"
-	"github.com/shijuvar/gokit/training/userdefinedtype/domain"
+	"mytraining/userdefinedtype/domain"
 )
 
 const customerIdSeq int = 0
