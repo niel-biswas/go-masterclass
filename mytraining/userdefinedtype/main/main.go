@@ -67,7 +67,7 @@ func main() {
 
 	var id, name, email, userInput string
 	for breakProgram != true {
-		fmt.Print("\nWelcome to ABC Company's customer data store. Please choose one of the options below :\n1. Create Customer (cc)                                                          \n2. Update Customer (uc)                                                          \n3. Delete Customer (dc)                                                          \n4. Get Customer (gc)                                                             \n5. Get All Customers (gac)                                                       \nPlease enter the short-hand notation (value inside brackets): ")
+		fmt.Print("\nWelcome to ABC Company's customer data store. Please choose one of the options :\n1. Create Customer (cc)                                                          \n2. Update Customer (uc)                                                          \n3. Delete Customer (dc)                                                          \n4. Get Customer (gc)                                                             \n5. Get All Customers (gac)                                                       \nPlease enter the short-hand notation (value inside brackets): ")
 		fmt.Scanf("%s\n", &userInput)
 		switch userInput {
 		case "cc":
