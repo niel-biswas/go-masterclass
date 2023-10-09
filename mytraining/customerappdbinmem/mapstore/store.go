@@ -1,8 +1,8 @@
 package mapstore
 
 import (
+	"customerappdbinmem/domain"
 	"errors"
-	"mytraining/userdefinedtype/domain"
 )
 
 const customerIdSeq int = 0

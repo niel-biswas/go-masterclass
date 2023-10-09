@@ -1,9 +1,9 @@
 package main
 
 import (
+	"customerappdbinmem/domain"
+	"customerappdbinmem/mapstore"
 	"fmt"
-	"mytraining/userdefinedtype/domain"
-	"mytraining/userdefinedtype/mapstore"
 )
 
 // Organises the CRUD operations at UI layer
