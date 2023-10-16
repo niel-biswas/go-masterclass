@@ -1,4 +1,4 @@
-package customerapp
+package main
 
 import (
 	"customerapp/controller"
