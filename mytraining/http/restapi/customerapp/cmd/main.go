@@ -11,6 +11,7 @@ import (
 
 func main() {
 	logger, _ := zap.NewProduction()             // Create Uber's Zap logger
+	defer logger.Sync()                          // flushes buffer, if any
 	repo, err := dbrepos.NewInmemoryRepository() // With in-memory database
 	// repo, err := dbrepos.NewMongoDBRepository() // With MongoDB database
 	if err != nil {

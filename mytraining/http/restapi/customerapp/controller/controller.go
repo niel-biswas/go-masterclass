@@ -14,8 +14,8 @@ import (
 
 type CustomerController struct {
 	// Explicit dependency that hides dependent logic
-	Repository model.Repository // CustomerStore value
-	Logger     *zap.Logger
+	Repository model.Repository // Interface for persistence - CustomerStore
+	Logger     *zap.Logger      // Uber's Zap logger
 }
 
 // HTTP Post - /api/customer
@@ -87,7 +87,7 @@ func (ctl CustomerController) Get(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	id := vars["id"]
 	// Get by id
-	if customers, err := ctl.Repository.GetById(id); err != nil {
+	if customer, err := ctl.Repository.GetById(id); err != nil {
 		ctl.Logger.Error(err.Error(),
 			zap.String("url", r.URL.String()),
 		)
@@ -98,7 +98,7 @@ func (ctl CustomerController) Get(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	} else {
-		j, err := json.Marshal(customers)
+		j, err := json.Marshal(customer)
 		if err != nil {
 			ctl.Logger.Error(err.Error(),
 				zap.String("url", r.URL.String()),
