@@ -1,8 +1,4 @@
-# gokit: Guidance on Go Programming Language
-* Code examples for the [Go Programming Workshop](https://github.com/shijuvar/shijuvar/blob/master/masterclass.md)
-* Check out [go-distributed-sys](https://github.com/shijuvar/go-distributed-sys) for Microservices based architectural patterns such as Event Sourcing/CQRS wih gRPC, NATS Streaming and CockroachDB
-
-## Articles
+## Some Useful Articles
 * [Building Microservices with Event Sourcing/CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-983f650452aa)
 * [Writing gRPC Interceptors in Go](https://medium.com/@shijuvar/writing-grpc-interceptors-in-go-bf3e7671fe48)
 * [Building Distributed Systems and Microservices in Go with NATS Streaming](https://medium.com/@shijuvar/building-distributed-systems-and-microservices-in-go-with-nats-streaming-d8b4baa633a2)
