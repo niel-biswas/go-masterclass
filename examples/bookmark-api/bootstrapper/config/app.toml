@@ -1,4 +1,0 @@
-# TOML config file.
-[discovery]
-orderservice = "localhost:50051"
-
