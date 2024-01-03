@@ -20,7 +20,8 @@ var db *sql.DB
 
 func init() {
 	var err error
-	db, err = sql.Open("postgres", "postgres://user:pass@localhost/productstore")
+	// db, err = sql.Open("postgres", "postgres://postgres:postgres@localhost/productstore")
+	db, err = sql.Open("postgres", "user=postgres password=admin dbname=productstore sslmode=disable")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -36,7 +37,7 @@ func main() {
 	// Read all product records
 	getProducts()
 	// Read a product by given id
-	getProductByID(1)
+	getProductByID(102)
 }
 
 // createProduct inserts product values into product table
